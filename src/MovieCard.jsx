@@ -4,9 +4,7 @@ import { useNavigate } from "react-router-dom";
 const MovieCard = ({ movie:{ imdbID, Year, Poster, Title, Type }, onClick }) => {
    const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate(`/nowplaying/${imdbID}`);
-  };
+
    
     return (
         <div className="movie" key={imdbID} onClick={() => onClick(imdbID)}>
