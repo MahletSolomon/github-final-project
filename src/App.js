@@ -1,16 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
-// import { useHistory } from 'react-router-dom';
-
 import { useNavigate } from "react-router-dom";
-
-
-// import { useHistory } from "react-router-dom";
 import "./App.css";
 import searchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 import SearchHistory from  "./SearchHistory";
-import closeIcon from './close.svg'
+import closeIcon from './close.svg';
+
+
 
 class Stack {
     constructor(){
@@ -201,17 +198,6 @@ const App = ()=>{
              <div className="empty">No results found.</div>
             )
             }
-             
-            {/* <NowPlaying play={'tt1488589'} /> */}
-
-            {/* <div style={iframeContainer}>
-            <iframe
-          style={iframeContent}
-          src={`https://vidsrc.in/embed/${play}/`}
-          allowFullScreen
-      />
-      </div> */}
-
            
         </div>
     );
